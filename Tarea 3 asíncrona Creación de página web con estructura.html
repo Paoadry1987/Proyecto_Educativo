@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de Página</title>
+    <style>
+        Estilo de la Profe. Adry
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    .container {
+            display: grid;
+            grid-template-areas:
+                "header header header header"
+                "nav nav nav nav"
+                "article article aside aside"
+                "footer footer footer footer";
+            grid-template-columns: 2fr 2fr 1fr 1fr;
+            gap: 5px;
+        }
+    header {
+            grid-area: header;
+            background-color: #f5f5f5;
+            padding: 1px;
+            text-align: center;
+            font-size: 10px;
+            font-weight: bold;
+            color: brown;
+			border: 1px solid #000000;
+        }
+        nav {
+            grid-area: nav;
+            background-color: #f0e68c;
+            padding: 5px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); /* 6 columnas iguales */
+            gap: 10px;
+        }
+        nav div {
+            background-color: #e6f7ff;
+            border: 1px solid #000000;
+            text-align: center;
+            padding: 5px;
+            font-weight: bolder;
+            color:#000000;
+        }
+	body {
+            font-family: Arial, sans-serif;
+            display: grid;
+          
+            gap: 10px;
+            padding: 20px;
+        }
+        article {
+            grid-area: article;
+            background-color: #e8f5e9;
+            padding: 20px;
+			border: 1px solid #000000;
+        }
+        section {
+            background-color: #f9f9f9;
+            margin: 20px 0;
+            padding: 30px;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+			border: 1px solid #000000;
+        }
+		
+        aside {
+            grid-area: aside;
+            background-color: #4682b4;
+            padding: 20px;
+            text-align: left;
+            font-weight: bold;
+            color: #000000;
+			border: 1px solid #000000;
+        }
+       footer {
+            grid-area: footer;
+            background-color: #d3d3ff;
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: blue;
+			border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+
+	<div class="container">
+	<header>
+	<img src="http://www.utmachala.edu.ec/portalwp/wp-content/uploads/2015/08/LOGO_OUT-300x300.png" alt="100px" width="100px">
+        <h1>UNIVERSIDAD TÉCNICA DE MACHALA</h1>
+		
+    </header>
+    
+    <nav>
+        <div> <a href="https://www.google.com">Google</a></div>
+        <div> <a href="https://www.facebook.com">Facebook</a></div>
+        <div> <a href="https://www.instagram.com">Instagram</a></div>
+        <div> <a href="https://www.google.com">Google</a></div>
+        <div> <a href="https://www.google.com">Google</a></div>
+        <div> <a href="https://www.google.com">Google</a></div>
+    </nav>
+    
+    <article>
+        <h3>INTEGRACIÓN DE LA TECNOLOGÍA EDUCATIVA EN EL AULA DE EDUCACIÓN BÁSICA EN ECUADOR</h3>
+    <section>
+	<h3>Integración de Tecnología Educativa</h3>
+    <p>La implementación de tecnología educativa en las aulas de educación básica en Ecuador aborda los beneficios, desafíos y brechas en infraestructura, capacitación docente y acceso equitativo. A través de un enfoque cualitativo y cuantitativo, el estudio destaca la necesidad de recursos tecnológicos y formación docente para fomentar la inclusión digital en el sistema educativo ecuatoriano.</p>
+    <br>
+    <p>Puedes consultar el artículo completo <a href="https://doi.org/10.37811/cl_rcm.v8i2.10389" target="_blank">aquí</a>.</p>
+    </section>
+    <section>
+        <h3>Consejos basados en los desafíos y necesidades identificados en el artículo</h3>
+        
+	<ul style="text-align: left;">
+        <li>Capacitación continua para docentes.</li>
+        <li>Mejora de la infraestructura.</li>
+        <li>Fomentar la equidad en el acceso.</li>
+        <li>Evaluar el impacto regularmente.</li
+     </ul>		
+    
+    </section>
+</article>
+
+<aside>
+    <h2>Recursos Adicionales</h2>
+    <p>A continuación, encontrarás un video que complementa la información sobre la integración de la tecnología</p>
+    <div>
+	<a href='url'><iframe width="400" height="500" src="https://www.youtube.com/embed/8Czk6FtNxjk" title="La tecnología y la educación" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></a>
+    </div>
+</aside>
+ 
+    <footer>
+        <p>Desarrollado por Adriana Tituaña</p>
+        <p>El Guabo-Ecuador</p>
+    </footer>
+</div>
+
+</body>
+</html>
