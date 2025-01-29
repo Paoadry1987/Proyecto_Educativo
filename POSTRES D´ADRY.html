@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres D' Adry - Blog</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Estilos de Cabecera */
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: #d2691e;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header nav a {
+            color: #fff8f0;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            color: #ffe5d1;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        /* Estilos de Artículos */
+        main article {
+            background-color: #ffe5d1;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 2px solid #d2691e;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        main h2 {
+            color: #b34700;
+            margin-bottom: 10px;
+        }
+
+        main p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        /* Estilos de la Barra Lateral */
+        aside {
+            background-color: #ffd8a8;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #d2691e;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .archivo, .acerca {
+            margin-bottom: 20px;
+        }
+
+        .archivo h3, .acerca h3 {
+            color: #b34700;
+            margin-bottom: 10px;
+        }
+
+        .archivo ul, .acerca p {
+            font-size: 0.9em;
+        }
+
+        /* Estilos de Pie de Página */
+        footer {
+            width: 100%;
+            padding: 10px;
+            background-color: #d2691e;
+            color: #fff8f0;
+            text-align: center;
+            font-size: 0.9em;
+            margin-top: 20px;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <h1>Postres D' Adry</h1>
+        <nav>
+            <a href="#">Principal</a> | 
+            <a href="#">Recetas</a> | 
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Contenido principal en cuadrícula -->
+    <div class="container">
+        <!-- Sección de Información Principal (Posts del Blog) -->
+        <main>
+            <article>
+                <h2>Tarta de Chocolate</h2>
+                <p>Disfruta de nuestra deliciosa tarta de chocolate, preparada con ingredientes frescos y un toque especial de D' Adry.</p>
+                <p>Publicado el 15 de Julio, 2023</p>
+            </article>
+            <article>
+                <h2>Cheesecake de Frutos Rojos</h2>
+                <p>Prueba nuestro cheesecake suave y cremoso, decorado con una mezcla de frutos rojos frescos para un sabor inigualable.</p>
+                <p>Publicado el 12 de Julio, 2023</p>
+            </article>
+            <article>
+                <h2>Brownies Caseros</h2>
+                <p>Experimenta la delicia de nuestros brownies caseros, perfectos para acompañar con un café o como postre después de una buena comida.</p>
+                <p>Publicado el 8 de Julio, 2023</p>
+            </article>
+        </main>
+
+        <!-- Barra Lateral (Archivo y Acerca de) -->
+        <aside>
+            <section class="archivo">
+                <h3>Archivo</h3>
+                <ul>
+                    <li>2023
+                        <ul>
+                            <li>Julio (3)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="acerca">
+                <h3>Acerca de</h3>
+                <p>Postres D' Adry - Postres caseros en Santa Rosa.</p>
+                <p>Especialidad en: Tartas, Cheesecakes, Brownies, y más. Todos nuestros productos están hechos con amor y los mejores ingredientes.</p>
+            </section>
+        </aside>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Derechos Reservados 2023 - Postres D' Adry</p>
+    </footer>
+
+</body>
+</html>
