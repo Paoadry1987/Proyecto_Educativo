@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicias Dulces - Pastelería</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fffaf0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg, #ff6f61, #ffcc33);
+            color: white;
+            padding: 5px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        header img {
+            height: 200px; /* Tamaño de la imagen */
+            margin-right: 5px;
+            border-radius: 10%; /* Hace que la imagen sea redonda */
+        }
+        nav {
+            background-color: #ffccff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 20px;
+            z-index: 999;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            display: none; /* Ocultamos todas las secciones por defecto */
+            padding: 10px;
+            text-align: center;
+            min-height: 100vh;
+        }
+        .section.active {
+            display: block; /* Mostramos la sección activa */
+        }
+        .section:nth-child(odd) {
+            background-color: #ffe6b3;
+        }
+        .section:nth-child(even) {
+            background-color: #fff3e0;
+        }
+        footer {
+            background-color: #ff6f61;
+            color: black;
+            text-align: center;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .menu-item {
+            display: inline-block;
+            margin: 15px;
+            text-align: center;
+        }
+        .menu-item img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img src="C:\Users\abgad\Downloads\LOGOPOSTRES-removebg-preview.png" alt="Logo del Local">
+        <h1>DELICIAS DULCES</h1>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <a href="#inicio" onclick="mostrarSeccion('inicio')">INICIO</a>
+        <a href="#sobre-nosotros" onclick="mostrarSeccion('sobre-nosotros')">SOBRE NOSOTROS</a>
+        <a href="#menu" onclick="mostrarSeccion('menu')">MENÚ</a>
+        <a href="#galeria" onclick="mostrarSeccion('POSTRE DESTACADO')">POSTRE DESTACADO</a>
+        <a href="#testimonios" onclick="mostrarSeccion('testimonios')">COMBOS</a>
+        <a href="#contacto" onclick="mostrarSeccion('contacto')">CONTACTO</a>
+    </nav>
+
+    <!-- Secciones -->
+    <div id="inicio" class="section active">
+        <h2>Inicio</h2>
+        <p>Bienvenidos a Adry Narcy "DELICIAS DULCES", donde cada postre es una obra de arte y cada bocado una experiencia inolvidable. Creemos que lo dulce hace la vida más especial, por eso ponemos pasión, calidad y amor en cada creación. Déjate conquistar por nuestros sabores únicos y haz de cada momento una dulce celebración." 🍰💖</p>
+    <div class="menu-item">
+            <img src="C:\Users\abgad\Downloads\INICIO.jpg"" alt="Cupcakes de Vainilla">
+        </div>
+	</div>
+
+    <div id="sobre-nosotros" class="section">
+        <h2>Sobre Nosotros</h2>
+        <p>En Delicias Dulces llevamos más de 10 años creando postres que combinan sabor, tradición e innovación. Nuestro objetivo es endulzar tus momentos especiales.</p>
+    </div>
+
+    <div id="menu" class="section">
+        <h2>Menú</h2>
+        <div class="menu-item">
+            <img src="https://www.nestleprofessional-latam.com/sites/default/files/styles/np_recipe_detail/public/2024-08/torta-barras-chocolate-black-white-sublime.jpg?itok=BXcporU-" alt="Tarta de Chocolate">
+            <h3>Tarta de Chocolate</h3>
+            <p>$12.00</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/736x/26/41/1f/26411f617ba07371628deb7f012c4752.jpg" alt="Cupcakes de Vainilla">
+            <h3>Cupcakes de Vainilla</h3>
+            <p>$8.00</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/736x/f2/03/70/f20370c377cc7a7b17943f67307c833f.jpg" alt="Macarons">
+            <h3>Cheesecake de Fresa</h3>
+            <p>$15.00</p>
+        </div>
+		<div class="menu-item">
+            <img src="https://i.pinimg.com/736x/f2/03/70/f20370c377cc7a7b17943f67307c833f.jpg" alt="Macarons">
+            <h3>Cheesecake de Fresa</h3>
+            <p>$15.00</p>
+        </div>
+		<div class="menu-item">
+            <img src="https://i.pinimg.com/736x/f2/03/70/f20370c377cc7a7b17943f67307c833f.jpg" alt="Macarons">
+            <h3>Cheesecake de Fresa</h3>
+            <p>$15.00</p>
+        </div>
+		<div class="menu-item">
+            <img src="https://i.pinimg.com/736x/f2/03/70/f20370c377cc7a7b17943f67307c833f.jpg" alt="Macarons">
+            <h3>Cheesecake de Fresa</h3>
+            <p>$15.00</p>
+        </div>
+		<div class="menu-item">
+            <img src="https://i.pinimg.com/736x/f2/03/70/f20370c377cc7a7b17943f67307c833f.jpg" alt="Macarons">
+            <h3>Cheesecake de Fresa</h3>
+            <p>$15.00</p>
+        </div>
+		<div class="menu-item">
+            <img src="https://i.pinimg.com/736x/f2/03/70/f20370c377cc7a7b17943f67307c833f.jpg" alt="Macarons">
+            <h3>Cheesecake de Fresa</h3>
+            <p>$15.00</p>
+        </div>
+		<div class="menu-item">
+            <img src="https://i.pinimg.com/736x/f2/03/70/f20370c377cc7a7b17943f67307c833f.jpg" alt="Macarons">
+            <h3>Cheesecake de Fresa</h3>
+            <p>$15.00</p>
+        </div>
+		<div class="menu-item">
+            <img src="https://i.pinimg.com/736x/f2/03/70/f20370c377cc7a7b17943f67307c833f.jpg" alt="Macarons">
+            <h3>Cheesecake de Fresa</h3>
+            <p>$15.00</p>
+        </div>
+		<div class="menu-item">
+            <img src="https://i.pinimg.com/736x/f2/03/70/f20370c377cc7a7b17943f67307c833f.jpg" alt="Macarons">
+            <h3>Cheesecake de Fresa</h3>
+            <p>$15.00</p>
+        </div>
+		<div class="menu-item">
+            <img src="https://i.pinimg.com/736x/f2/03/70/f20370c377cc7a7b17943f67307c833f.jpg" alt="Macarons">
+            <h3>Cheesecake de Fresa</h3>
+            <p>$15.00</p>
+        </div>
+	
+    </div>
+
+    <div id="POSTRE DESTACADO" class="section">
+        <h2>POSTRE DESTACADO</h2>
+        <p>Explora algunas de nuestras creaciones más coloridas y deliciosas:</p>
+        <img src="https://via.placeholder.com/300x200" alt="Postre 1">
+        <img src="https://via.placeholder.com/300x200" alt="Postre 2">
+        <img src="https://via.placeholder.com/300x200" alt="Postre 3">
+    </div>
+
+    <div id="testimonios" class="section">
+        <h2>Testimonios</h2>
+        <p>"Los postres más deliciosos y frescos que he probado. ¡Altamente recomendados!" - María P.</p>
+        <p>"Mi boda no habría sido la misma sin su pastel. ¡Un trabajo espectacular!" - Carlos L.</p>
+    </div>
+
+    <div id="contacto" class="section">
+        <h2>Contacto</h2>
+        <p>Email: contacto@deliciasdulces.com</p>
+        <p>Teléfono: +1 (234) 567-890</p>
+        <p>Dirección: Calle Dulce, 123, Ciudad Pastel</p>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 DELICIAS DULCES. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Función para mostrar la sección seleccionada
+        function mostrarSeccion(id) {
+            // Ocultar todas las secciones
+            const secciones = document.querySelectorAll('.section');
+            secciones.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Mostrar la sección activa
+            const seccionActiva = document.getElementById(id);
+            seccionActiva.classList.add('active');
+        }
+    </script>
+</body>
+</html>
